@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<classe>
+    <student cne="K19286670">
+        <adresse>
+            <codePostale>12345</codePostale>
+            <numero>1</numero>
+            <ville>SIDI BENNOUR</ville>
+        </adresse>
+        <nom>ELMAJNI</nom>
+        <note>20.0</note>
+        <note>19.0</note>
+        <note>18.0</note>
+        <prenom>KHAOULA</prenom>
+    </student>
+    <student cne="K18386309">
+        <adresse>
+            <codePostale>12483</codePostale>
+            <numero>2</numero>
+            <ville>RABAT</ville>
+        </adresse>
+        <nom>CHOUKAIRI</nom>
+        <note>17.0</note>
+        <note>18.0</note>
+        <note>16.0</note>
+        <prenom>AHMED</prenom>
+    </student>
+</classe>

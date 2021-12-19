@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserLayoutController">
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+          <padding>
+              <Insets topRightBottomLeft="20" />
+          </padding>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="147.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="453.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="fieldnom" promptText="Nom" GridPane.columnIndex="1" />
+            <Label text="Nom : " />
+            <Label text="Prenom : " GridPane.rowIndex="1" />
+            <Label text="Adresse" GridPane.rowIndex="2" />
+            <TextField fx:id="fieldprenom" promptText="Prenom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="fieldadresse" promptText="Adresse" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Email" GridPane.rowIndex="3" />
+            <Label text="Password : " GridPane.rowIndex="4" />
+            <TextField fx:id="fieldlogin" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <PasswordField fx:id="fieldpassword" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+          <padding>
+              <Insets topRightBottomLeft="20" />
+          </padding>
+         <top>
+            <HBox prefHeight="55.0" prefWidth="482.0" spacing="45" BorderPane.alignment="CENTER">
+
+               <children>
+                  <Button fx:id="add" mnemonicParsing="false" onAction="#addUser" text="Add" />
+                  <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteUser" text="Delete" />
+                  <Button fx:id="save" mnemonicParsing="false" onAction="#saveUser" text="Save" />
+                  <Button fx:id="sort" mnemonicParsing="false" onAction="#sortUsers" text="Sort" />
+                  <TextField fx:id="fieldsearch" prefHeight="25.0" prefWidth="307.0" promptText="search..." />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="nom" prefWidth="148.0" text="Nom" />
+                <TableColumn fx:id="prenom" prefWidth="144.0" text="Prénom" />
+                <TableColumn fx:id="adresse" prefWidth="168.0" text="Adresse" />
+                <TableColumn fx:id="login" prefWidth="198.0" text="Login" />
+              </columns>
+
+            </TableView>
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

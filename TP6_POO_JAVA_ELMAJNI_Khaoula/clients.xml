@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metierClientImpl>
+    <clients>
+        <nom>AA</nom>
+        <prenom>AA</prenom>
+        <adresse>AA</adresse>
+        <tel>AA</tel>
+        <email>AA</email>
+    </clients>
+    <clients>
+        <nom>ZZ</nom>
+        <prenom>ZZ</prenom>
+        <adresse>ZZZ</adresse>
+        <tel>ZZ</tel>
+        <email>Z</email>
+    </clients>
+    <clients>
+        <nom>EE</nom>
+        <prenom>EE</prenom>
+        <adresse>EE</adresse>
+        <tel>EE</tel>
+        <email>EE</email>
+    </clients>
+</metierClientImpl>

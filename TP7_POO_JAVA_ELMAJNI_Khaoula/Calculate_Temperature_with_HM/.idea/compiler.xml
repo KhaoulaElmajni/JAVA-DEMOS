@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MyHeatMap.main" options="--add-exports charts/eu.hansolo.fx.charts.series=com.example.myheatmap --add-exports charts/eu.hansolo.fx.charts.data=com.example.myheatmap --add-exports charts/eu.hansolo.fx.charts.tools=com.example.myheatmap" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="classe" type="classe"/>
+
+  <xs:element name="student" type="student"/>
+
+  <xs:complexType name="classe">
+    <xs:sequence>
+      <xs:element ref="student" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="student">
+    <xs:sequence>
+      <xs:element name="adresse" type="adresse" minOccurs="0"/>
+      <xs:element name="nom" type="xs:string" minOccurs="0"/>
+      <xs:element name="note" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="prenom" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="cne" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="adresse">
+    <xs:sequence>
+      <xs:element name="codePostale" type="xs:int"/>
+      <xs:element name="numero" type="xs:int"/>
+      <xs:element name="ville" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

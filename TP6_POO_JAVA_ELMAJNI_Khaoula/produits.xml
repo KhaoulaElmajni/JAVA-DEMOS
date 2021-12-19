@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metierProduitImpl>
+    <produits>
+        <description>LOREM IPSUM</description>
+        <marque>AA</marque>
+        <nbrStock>23</nbrStock>
+        <nom>AA</nom>
+        <prix>12.0</prix>
+    </produits>
+    <produits>
+        <description>LOREM IPSUM</description>
+        <marque>ZZ</marque>
+        <nbrStock>56</nbrStock>
+        <nom>ZZ</nom>
+        <prix>45.0</prix>
+    </produits>
+</metierProduitImpl>
